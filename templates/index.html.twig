@@ -1,1 +1,21 @@
 {% extends 'base.html.twig' %}
+{% block content %}
+    <h2>Usuario Registrado:</h2>
+    <form method="post" action="index.php">
+        <label for="username">Usuario:</label>
+        <input type="text" name="username" />
+        <label for="password">Password:</label>
+        <input type="password" name="password" />
+        <input type="submit" value="ingresar" />
+    </form>
+    <hr />
+    <h2>Nuevo Usuario: </h2>
+    <form method="post" action="#">
+        <label for="username">Usuario:</label>
+        <input type="text" name="username" />
+        <label for="email">Correo Valido</label>
+        <input type="text" name="email" />
+        <label for="password">Contrasena</label>
+        <input type="password" name="password" />
+    </form>
+{% endblock %}
